@@ -1,4 +1,4 @@
-#:arrow_forward: 30th Second Radio :notes:
+# :arrow_forward: 30th Second Radio :notes:
 
 This is a simple  Music Player made with Javascript, pure HTML and CSS.
 
