@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Audio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>30th Second Radio</h1>
+    </header>
+    <div class="container">
+      <div class="music-info">
+        <div class="search">
+          <input
+            type="text"
+            id="artist"
+            class="inp"
+            placeholder="Digite o nome do artista ou música"
+          />
+          <button onclick="findMusic()">Buscar</button>
+        </div>
+
+        <img src="" alt="" id="albumImage" />
+        <h5 id="artistInfo"></h5>
+        <ul id="listInfo"></ul>
+      </div>
+      <div class="player">
+        <h3 id="musicName"></h3>
+        <audio id="audio" crossorigin="anonymous" controls autoplay></audio>
+
+        <br />
+        <!-- <input id="volume" type="range" min="0" max="1" step="0.01" /> -->
+        <label for="">Balanço</label>
+        <input type="range" id="balanco" min="-1" max="1" step="0.001" />
+        <div
+          class="waves-frequency"
+          id="waves-frequency"
+          style="display: none;"
+        >
+          <h3>Frequência no domínio do tempo</h3>
+          <canvas width="300" height="300" id="canvas"></canvas>
+          <canvas width="300" height="300" id="canvas2"></canvas>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Este site utiliza o mecanismo de integração
+        <a href="https://docs.rapidapi.com/docs" target="_blank">RapidApi</a>
+        para realizar buscas na API do
+        <a href="https://www.deezer.com/br/" target="_blank">Deezer</a>.
+      </p>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./audio.js"></script>
+  </body>
+</html>
