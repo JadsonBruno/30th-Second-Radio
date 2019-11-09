@@ -156,13 +156,10 @@ function draw2() {
   let canvas2 = document.querySelector("#canvas2");
   let canvasContext2 = canvas2.getContext("2d");
 
-  // let media2 = audioContext.createMediaElementSource(audio);
   let analyser2 = analyser;
-  analyser2.fftSize = 1024;
   let bufferLength2 = analyser2.frequencyBinCount;
   let dataArray2 = new Uint8Array(bufferLength);
 
-  // media2.connect(analyser2);
   analyser2.connect(audioContext.destination);
 
   requestAnimationFrame(draw2);
