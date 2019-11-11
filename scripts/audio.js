@@ -158,7 +158,7 @@ function draw2() {
 
   let analyser2 = analyser;
   let bufferLength2 = analyser2.frequencyBinCount;
-  let dataArray2 = new Uint8Array(bufferLength);
+  let dataArray2 = new Uint8Array(bufferLength2);
 
   analyser2.connect(audioContext.destination);
 

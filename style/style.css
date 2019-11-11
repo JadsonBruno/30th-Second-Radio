@@ -3,7 +3,7 @@
   margin: 0;
   list-style: none;
   font-family: "Montserrat", sans-serif;
-  background: #2f2f2f;
+  background: black;
   color: #ffffff;
   outline: none;
 }
@@ -17,15 +17,15 @@ header {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
   padding: 70px;
-  border: 5px solid black;
   border-radius: 20px;
+  background: #2f2f2f;
 }
 
 #artist {
@@ -33,6 +33,7 @@ header {
   font-size: 15px;
   padding: 5px 5px 5px 5px;
   border: #808080 2px solid;
+  background: inherit;
 }
 
 #artist:focus {
@@ -41,8 +42,13 @@ header {
   border: #ffffff 2px solid;
 }
 
+.search {
+  background: inherit;
+}
+
 li {
   padding: 10px;
+  background: inherit;
 }
 
 .music-info {
@@ -51,6 +57,7 @@ li {
   align-items: center;
   justify-content: space-around;
   padding: 50px;
+  background: #2f2f2f;
 }
 
 .music-info img {
@@ -60,6 +67,7 @@ li {
 .music-info h5 {
   align-self: center;
   margin-top: 5px;
+  background: inherit;
 }
 
 .music-info ul {
@@ -68,6 +76,7 @@ li {
   flex-direction: column;
   justify-content: space-around;
   margin: 10px;
+  background: inherit;
 }
 
 button {
@@ -101,6 +110,7 @@ button:active {
 
 audio {
   margin: 10px 0 10px 0;
+  background: inherit;
 }
 
 .player {
@@ -109,13 +119,16 @@ audio {
   padding: 50px;
   align-items: center;
   justify-content: space-around;
+  background: #2f2f2f;
 }
-
+.player label {
+  background: inherit;
+}
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 240px;
+  margin-top: 120px;
   margin-bottom: 8px;
 }
 
@@ -124,20 +137,21 @@ footer {
   flex-direction: column;
   margin-top: 65px;
   justify-content: space-between;
+  background: #2f2f2f;
 }
 
 .player h3 {
   margin-top: 15px;
   margin-bottom: 15px;
+  background: #2f2f2f;
 }
 
 canvas {
-  /* margin-top: 20px; */
   border: 3px solid #000;
   border-radius: 10px;
 }
 
-@media (max-width: 985px) {
+@media (max-width: 1100px) {
   .container {
     flex-wrap: wrap;
   }
