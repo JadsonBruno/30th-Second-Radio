@@ -1,5 +1,7 @@
 # :arrow_forward: 30th Second Radio :notes:
 
+![bg-app](/imgs/github-img.png)
+
 This is a simple  Music Player made with Javascript, pure HTML and CSS.
 
 
